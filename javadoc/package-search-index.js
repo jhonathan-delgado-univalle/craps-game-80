@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.example.crapsgame80","l":"com.example.crapsgame80"},{"m":"com.example.crapsgame80","l":"com.example.crapsgame80.controllers"},{"m":"com.example.crapsgame80","l":"com.example.crapsgame80.models"}];updateSearchResults();
