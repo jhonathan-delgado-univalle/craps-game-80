@@ -1,9 +1,11 @@
 package com.example.crapsgame80.controllers;
 
 import com.example.crapsgame80.models.AlertBox;
+import com.example.crapsgame80.models.Player;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.KeyEvent;
 
@@ -14,6 +16,11 @@ import javafx.scene.input.KeyEvent;
  * @version 1.0
  */
 public class GameController {
+
+    private Player player;
+
+    @FXML
+    Label nicknameLabel;
 
     @FXML
     private Button playButton;
@@ -57,6 +64,11 @@ public class GameController {
         System.out.println(event.getTarget());
         System.out.println(event.getEventType());
         System.out.println(event.getCharacter());
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+        this.nicknameLabel.setText(player.getNickname());
     }
 
 }

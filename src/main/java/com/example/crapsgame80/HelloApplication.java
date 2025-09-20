@@ -1,6 +1,8 @@
 package com.example.crapsgame80;
 
 import com.example.crapsgame80.models.AlertBox;
+import com.example.crapsgame80.views.GameView;
+import com.example.crapsgame80.views.WelcomeView;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -43,7 +45,7 @@ public class HelloApplication extends Application {
         stage.show();
         */
 
-
+        /*
         stage.setTitle("Craps Game");
         FXMLLoader fxmlLoader = new FXMLLoader(
                 getClass().getResource("/com/example/crapsgame80/game-view.fxml")
@@ -52,7 +54,10 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        */
 
+        WelcomeView welcomeView = new WelcomeView();
+        welcomeView.show();
     }
 
     public static void main(String[] args) {
