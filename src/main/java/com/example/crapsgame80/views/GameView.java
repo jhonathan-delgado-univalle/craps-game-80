@@ -22,9 +22,7 @@ public class GameView extends Stage {
         gameController = fxmlLoader.getController();
         Scene scene = new Scene(root);
         this.setScene(scene);
-        this.getIcons().add(
-                new Image(getClass().getResourceAsStream("/com/example/crapsgame80/images/favicon.png"))
-        );
+
     }
 
     public GameController getGameController() {
